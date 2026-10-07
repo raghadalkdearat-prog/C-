@@ -39,6 +39,18 @@ namespace School_System
             Console.WriteLine("last student :"+students[3]);
 
             students[0] = "Rama";
+            Console.WriteLine("Student 1: " + students[0]);
+            Console.WriteLine("Student 2: " + students[1]);
+            Console.WriteLine("Student 3: " + students[2]);
+            Console.WriteLine("Student 4: " + students[3]);
+
+
+            double number = 10.8;
+
+            int result = (int)number;
+
+            Console.WriteLine(result);
+
 
         }
     }
