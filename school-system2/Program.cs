@@ -30,13 +30,13 @@ namespace school_system2
 
 
             Console.WriteLine("enter student gender");
-           char usergender= Convert.ToChar(Console.ReadLine());
+            char usergender= Convert.ToChar(Console.ReadLine());
 
 
             Console.WriteLine($"Welcom {username}");
-            Console.WriteLine($"User name : { username} \n age :{userage}\n User grade :{usergrade}\n User average :{useraverage}\n User gender : {usergender}" );
+            Console.WriteLine($"User name : { username} \n age :{userage}\n User grade :{usergrade}\n User average :{useraverage}\n User gender :{usergender}" );
 
-            Console.WriteLine($"Original User name:{username}\n User name Upper case : {username.ToUpper()}\n User name Lower case :{username.ToLower()} \n Firt char of name : { char.ToUpper(username[0])}");
+            Console.WriteLine($"Original User name :{username}\n User name Upper case :{username.ToUpper()}\n User name Lower case :{username.ToLower()} \n Firt char of name :{ char.ToUpper(username[0])}");
 
 
 
@@ -48,8 +48,8 @@ namespace school_system2
             bool Adult;
             double newaverage = bonus + useraverage;
 
-            Console.WriteLine($"Bonus = {bonus}");
-            Console.WriteLine($"new average : {newaverage}");
+            Console.WriteLine($"Bonus ={bonus}");
+            Console.WriteLine($"new average :{newaverage}");
 
             Console.WriteLine("================================================================");
 
