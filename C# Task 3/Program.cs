@@ -18,9 +18,11 @@ namespace C__Task_3
             int attempts = 0;
             int points = 0;
 
+
+            Console.WriteLine(number);
             Console.WriteLine("===== Guessing Game =====");
 
-            while (guess != number)
+            do
             {
                 Console.Write("Guess a number between 50 and 75: ");
                 guess = Convert.ToInt32(Console.ReadLine());
@@ -35,7 +37,9 @@ namespace C__Task_3
                 {
                     Console.WriteLine("Try a lower number.");
                 }
+
             }
+            while (guess != number);
 
             Console.WriteLine("Congratulations!");
 
@@ -61,16 +65,14 @@ namespace C__Task_3
 
 
 
-
-
             Console.WriteLine("==============================");
 
 
             string[] students = { "Ahmad", "Sara", "Omar", "Lina", "Yazan" };
 
-            for (int i = 0; i < students.Length; i++)
+            for (int j = 0; j < students.Length; j++)
             {
-                Console.WriteLine(students[i]);
+                Console.WriteLine(students[j]);
             }
 
 
@@ -83,27 +85,40 @@ namespace C__Task_3
             {
                 Console.WriteLine(grade);
             }
+
+
             Console.WriteLine("==============================");
+
+
+
 
             Console.WriteLine("Search for student name:");
             string studentname = Console.ReadLine();
+            int i = 0;
 
-            bool found = false;
-
-            for (int i = 0; i < students.Length; i++)
+            while (i < students.Length)
             {
                 if (studentname == students[i])
                 {
                     Console.WriteLine("Student Found!");
-                    found = true;
                     break;
                 }
+
+                i++;
             }
 
-            if (found == false)
+            if (i == students.Length)
             {
                 Console.WriteLine("Student Not Found.");
             }
+
+
+
+
+
+
+
+
 
 
             Console.WriteLine("==============================");
@@ -136,7 +151,6 @@ namespace C__Task_3
             Console.WriteLine("==============================");
 
             int choice;
-
             do
             {
                 Console.WriteLine("===== School System =====");
@@ -166,9 +180,7 @@ namespace C__Task_3
                         Console.WriteLine("Exit");
                         break;
 
-                    default:
-                        Console.WriteLine("Invalid choice");
-                        break;
+                   
                 }
 
             }
